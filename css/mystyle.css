@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Michroma";
+    src:
+        url('../fonts/michroma.woff2'),
+        url('../fonts/michroma.woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dseg7";
+    src:
+        url('../fonts/dseg7.woff2'),
+        url('../fonts/dseg7.woff');
+    font-display: swap;
+}
+
+main{
+    font-family: 'Michroma', sans-serif;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 20px;
+    border: 1px solid #a1a1a1;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    grid-template-rows: repeat(6, minmax(min-content, 1fr));
+    grid-auto-rows: 1fr;
+    overflow: auto;
+    background: #efeeef;
+}
+
+input {
+    background-color: #ffffff;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 5px solid #4f4239;
+    border-top: 2px solid #d0cec8;
+    border-right: 2px solid #CBC9C1;
+    border-left: 2px solid #4f4239;
+    box-shadow: 0 0 1px 2px #222;
+}
+
+input:active {
+    border-bottom: 3px solid #4f4239;
+    border-top: 1px solid #d0cec8;
+    border-right: 1px solid #CBC9C1;
+    border-left: 1px solid #4f4239;
+}
+
+#pantalla{
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+    margin-bottom: 6px;
+    grid-column: 1 / 5;
+}
+
+#display{
+    min-height: 7vh;
+    border: 0;
+    outline: none;
+    border-radius: 0px;
+    font-family: 'Dseg7', sans-serif;
+    flex: 100%;
+    padding: 5px 10px;
+    cursor: none;
+    text-align: right;
+    font-size: 0.4em;
+    color: #09d2bc;
+    background-color: #142525;
+    box-shadow: none;
+
+}
+#display1 {
+    min-height: 4vh;
+    flex: 100%;
+    font-size: 0.15em;
+    text-align: right;
+    padding: 5px 10px;
+    cursor: none;
+    background-color: #142525;
+    color: #09d2bc;
+    text-shadow: 
+        0 0 1px #0b6b60aa,
+        0 0 2px #3aa399aa,
+        0 0 3px #60b1a8aa,
+        0 0 4px #1b887baa;
+    overflow: hidden;
+}
+
+.inicializa {
+    background-color: #1520A6;
+    color: #ffffff;
+}
+
+.numero{
+    background: #000;
+    color: #ffffff;
+}
+
+.operacion {
+    background: #424242;
+    color: #ffffff;     
+}
+
+.cero {
+    grid-column: 1 /3;
+}
+
+.igual {
+    grid-row: 5 /7;
+    grid-column: 4 /5;
+}
